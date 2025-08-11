@@ -1,0 +1,136 @@
+.about {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 40px 10% 16px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.about-right h1 {
+  align-items: flex-start;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+.about-sections {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content:center; 
+}
+.about-left {
+  position: relative;
+  margin-top: 100px;
+}
+.speech-bubble {
+  background: #6DBA6D;
+  padding: 10px 18px;
+  border-radius: 20px;
+  position: absolute;
+  top: -60px;
+  left: -10px;
+  font-size: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  line-height: 1.4;
+  z-index: 1;
+}
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-top-color: #6DBA6D;
+}.speech-bubble {
+  animation: wiggle 1s ease-in-out;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(3deg);
+  }
+  30% {
+    transform: rotate(-3deg);
+  }
+  45% {
+    transform: rotate(2deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  90% {
+    transform: rotate(-1deg);
+  }
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+.about-right {
+  max-width: 700px;
+}
+.about-para {
+  background-color: #f6f6e4; 
+  padding: 28px 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  line-height: 1.6;
+  font-family:  "Shadows Into Light", cursive;
+  font-size: 20px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px), 
+    linear-gradient(90deg, #d8d8c7 28px, transparent 28px); 
+  background-size: 100% 28px, 100% 100%;     
+}
+.about-para p {
+  margin: 0 0 20px;
+}
+.about-para p:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;  
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+.skills h3{
+  margin:0;
+  font-size:32px;
+  font-weight:700;
+  color:#333;
+  padding-right:16px;
+  border-right:2px solid #cfcfcf;
+  white-space:nowrap;
+}
+.skills img {
+  width: 50px;
+  height: 50px;
+}

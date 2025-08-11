@@ -1,0 +1,102 @@
+.footer{
+    margin: 0px auto 0px;
+    padding: 10px 0;
+    display: grid;
+    border-top: 2px solid #396039;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 16px;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 16px;
+}
+.footer-left p{
+    font-size: 24px;
+    color: #396039;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(23) infinite,
+        cursor .4s step-end infinite alternate;
+}
+.sosmed{
+  display: flex;
+  gap: 10px;
+}
+.sosmed .btn{
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #396039;           /* icon color */
+    text-decoration: none;
+    transition: opacity .15s ease;
+}
+.footer .sosmed .btn svg{
+  width: 32px;
+  height: 32px;
+}
+
+.sosmed .btn:hover{
+    transform: translateY(-2px);
+}
+.footer-mid{
+    grid-column: 2;
+    justify-self: center;
+    font-size: 24px;
+    color: #396039;
+    text-align: center;
+}
+.top-button{
+    right: 24px;
+    bottom: 24px;
+    z-index: 999;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #396039;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    transition: transform .15s ease, background-color .15s ease;
+    animation-name: topbtn;
+    animation-timeline: scroll(y);
+}
+
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+@keyframes typing {
+    from { width: 0;}
+}
+@keyframes topbtn{
+    0%{
+        opacity: 0;
+        display: none;
+        position: fixed;
+    }
+    3%{
+        opacity: 0;
+        display: none;
+    }
+    3.5%{
+        opacity: 1;
+        display: block;
+    }
+    100%{
+        opacity: 1;
+        display: block;
+        position: fixed;
+    }
+}

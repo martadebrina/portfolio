@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  background: #fff9d6;
+  color: rgb(8, 8, 8);
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}

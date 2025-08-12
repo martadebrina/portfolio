@@ -1,6 +1,6 @@
 # Marta Debrina – Portfolio (React + Vite)
 
-A simple personal website built with React and Vite with CSS.
+A simple personal website built with React and Vite with CSS.\\
 **Live site:** https://martadebrina.dev
 
 ## What's inside

@@ -40,12 +40,6 @@ npm run preview
 
 ## Deploy
 
-**Vercel** (easiest):
-
-1. Push to GitHub.
-2. Import the repo in Vercel → Framework: *Vite*.
-3. Build command: `npm run build` · Output: `dist`.
-
 **Netlify**:
 
 1. New site from Git → pick the repo.

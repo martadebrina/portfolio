@@ -5,6 +5,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const projects = [
+    { title: "TasteVan", 
+      img: '/tastevan.png', 
+      link: "https://taste-van.com",
+      description: "FlutterFlow + Firebase web app for discovering Vancouver restaurants.",
+    },
     { title: "PuppyPal", 
       img: '/puppypal.jpeg', 
       link: "https://github.com/martadebrina/DogManagementApp",

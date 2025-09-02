@@ -1,21 +1,18 @@
-import React from 'react'
-import './Navbar.css'
-import logo from '../../assets/durian.png'
+import React from 'react';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
-        <div className='nav-left'>
-          <img src={logo} alt="logo" className='nav-logo' />
-        </div>
-        <ul className="nav-menu">
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#experience">Experience</a></li>
-        </ul>
-        <a href="#contact" className="nav-connect">Connect With Me</a>
-    </div>
-  )
-}
+    <nav className="navbar">
+      <ul className="nav-menu glass-pill">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;

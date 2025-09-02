@@ -1,54 +1,44 @@
-import React from 'react'
-import './Experience.css'
+import React from "react";
+import "./Experience.css";
+const items = [
+  {
+    role: "Undergraduate Research Assistant @ UBC",
+    date: "May 2024 – Aug. 2024",
+    desc: [
+      "Researched how AI tools can support student understanding of complex topics in physics. Analyzed student time-on-task data using Python (pandas, matplotlib) to identify problem trends."
+    ]
+  },
+  {
+    role: "Undergraduate Teaching Assistant @ UBC",
+    date: "Sep. 2024 – Apr. 2025",
+    desc: [
+      "Led physics labs using Python/Jupyter for data analysis, coding practice, problem-solving applications. Supported students via office hours, Piazza Q&A, and coordinated with instructors/TAs through Slack."
+    ]
+  },
+  {
+    role: "AI & Robotics Summer Program @ Suzhou Vocational Institute of IT",
+    date: "May 2023 – Jul. 2023",
+    desc: [
+      "Participated in a government-sponsored summer program focused on AI, robotics, and emerging technologies. Gained hands-on experience in microcontroller programming, robot mechanics, and basic machine learning. Developed practical skills in applying technology concepts to real-world engineering challenges."
+    ]
+  }
+];
 
-const Experience = () => {
+
+export default function Experience() {
   return (
-    <div className='experience'>
-        <h1>My Experiences</h1>
-        <div className="timeline">
-            <div className="container left">
-                <div className="box">
-                    <h2>Undergraduate Teaching Assistant </h2>
-                    <small>University of British Columbia Faculty of Physics </small>
-                    <ul className="bullets">
-                        <li> Led physics labs using Python/Jupyter for data analysis, guiding students with coding and problem-solving. </li>
-                        <li> Assisted students during office hours and responded to questions on Piazza to support their learning.</li>
-                        <li> Collaborated with TA team and instructors via Slack to coordinate and solve challenges.</li>
-                    </ul>
-                    <span className='left-arrow'></span>
-                </div>
-            </div>
-            <div className="container right">
-                <div className="box">
-                    <h3>Undergraduate Research Assistant  </h3>
-                    <small>University of British Columbia Vantage College </small>
-                    <p>
-                        <ul>
-                            <li> Researched how AI tools can support student understanding of complex topics in physics. </li>
-                            <li> Analyzed student time-on-task data using Python (pandas, matplotlib) to identify problem trends. </li>
-                            <li> Designed lesson plans and problem sets based on engagement patterns and analysis results.</li>
-                        </ul>
-                    </p>
-                    <span className='right-arrow'></span>
-                </div>
-            </div>
-            <div className="container left">
-                <div className="box">
-                    <h4>AI & Robotics Summer Program  </h4>
-                    <small>Suzhou Industrial Park Institute of Vocational Technology </small>
-                    <p>
-                        <ul>
-                            <li> Participated in a government-sponsored summer program focused on AI, robotics, and emerging technologies. </li>
-                            <li> Gained hands-on experience in microcontroller programming, robot mechanics, and basic machine learning.</li>
-                            <li> Developed practical skills in applying technology concepts to real-world engineering challenges.</li>
-                        </ul>
-                    </p>
-                    <span className='left-arrow'></span>
-                </div>
-            </div>
-        </div>
-    </div>
-  )
-}
+    <section id="experience" className="xp">
+      <h2 className="xp-title">Experiences</h2>
 
-export default Experience
+      <ul className="xp-list">
+        {items.map((it) => (
+          <li key={it.role} className="xp-item">
+            <h3 className="xp-role">{it.role}</h3>
+            <p className="xp-date">{it.date}</p>
+            <p className="xp-desc">{it.desc}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}

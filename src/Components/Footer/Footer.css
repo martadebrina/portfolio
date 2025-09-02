@@ -2,7 +2,7 @@
     margin: 0px auto 0px;
     padding: 10px 0;
     display: grid;
-    border-top: 2px solid #396039;
+    border-top: 2px solid #ffffff;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 16px;
@@ -15,7 +15,6 @@
 }
 .footer-left p{
     font-size: 24px;
-    color: #396039;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -38,7 +37,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #396039;           /* icon color */
+    color: #ffffff;           /* icon color */
     text-decoration: none;
     transition: opacity .15s ease;
 }
@@ -54,7 +53,6 @@
     grid-column: 2;
     justify-self: center;
     font-size: 24px;
-    color: #396039;
     text-align: center;
 }
 .top-button{
@@ -64,7 +62,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #396039;
+    color: #ffffff;
     padding: 0;
     border: none;
     border-radius: 0;

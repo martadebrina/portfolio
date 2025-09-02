@@ -1,61 +1,52 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #8B5E3C;
-    z-index: 999;
-}.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+/* Wrapper */
+.navbar {
+  position: fixed;
+  top: 40px; 
+  left: 0; 
+  right: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;   /* center the pill menu */
+  background: transparent;   /* no solid bar */
 }
-.nav-menu{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 30px;
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 150px; 
-    top: 50%;
-    transform: translateY(-50%);
-}.nav-menu li a {
-    text-decoration: none;
-    color: #FFF8D6;
-    font-weight: bold;
+
+/* Glass pill menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 36px;                 /* spacing between links */
+  margin: 0;
+  padding: 16px 40px;        /* make it bigger */
+  border-radius: 999px;
+  font-size: 1.2rem;
 }
-.nav-left img{
-    position: absolute;
-    left: 50px; 
-    width: 50px; 
-    height: auto;
+
+.glass-pill {
+  background: rgba(110, 134, 120, 0.28);  /* muted green glass */
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
-.nav-connect{
-    font-family: 'VT323', monospace;        
-    font-size: 1.5rem;
-    padding: 5px 15px;
-    background-color: #FFD02C;
-    color: black;
-    border: 2px solid #000;
-    border-radius: 0;
-    box-shadow: 0 4px #b8860b;              
-    cursor: pointer;
-    transition: transform 0.1s;
-    text-align: center;
-    image-rendering: pixelated;
-    text-rendering: optimizeSpeed;
-    text-decoration: none; 
+
+/* Links */
+.nav-menu a {
+  text-decoration: none;
+  color: #eaf1ec;  
+  letter-spacing: 0.2px;
+  transition: opacity .2s ease;
 }
-.nav-connect:hover{
-    transform: scale(1.2);
-}.nav-connect:active {
-  transform: translateY(-1px);
-  box-shadow: none;
+
+.nav-menu a:hover {
+  opacity: 0.8;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
 }

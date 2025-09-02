@@ -4,10 +4,10 @@
 }
 body{
   height: 100vh;
-  background: #fff9d6;
-  color: rgb(8, 8, 8);
-  font-family: "VT323", monospace;
-  font-weight: 400;
+  background: #1F2D23;
+  color: rgb(255, 255, 255);
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
   cursor: pointer;
 }

@@ -1,17 +1,11 @@
 .about {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  padding: 40px 10% 16px;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
 .about-right h1 {
   align-items: flex-start;
-  font-size: 4rem;
+  font-size: 50px;
   margin-bottom: 10px;
-  color: #333;
 }
 .about-sections {
   display: flex;
@@ -25,7 +19,7 @@
   margin-top: 100px;
 }
 .speech-bubble {
-  background: #6DBA6D;
+  background: rgba(110, 134, 120, 0.28);
   padding: 10px 18px;
   border-radius: 20px;
   position: absolute;
@@ -44,9 +38,9 @@
   width: 0;
   height: 0;
   border: 12px solid transparent;
-  border-top-color: #6DBA6D;
+  border-top-color: rgba(110, 134, 120, 0.28);
 }.speech-bubble {
-  animation: wiggle 1s ease-in-out;
+  animation: wiggle 1s infinite;
 }
 
 @keyframes wiggle {
@@ -84,17 +78,12 @@
   max-width: 700px;
 }
 .about-para {
-  background-color: #f6f6e4; 
-  padding: 28px 32px;
-  border-radius: 16px;
+  background: rgba(110, 134, 120, 0.28);
+  padding: 20px 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  border-radius: 10px;
   line-height: 1.6;
-  font-family:  "Shadows Into Light", cursive;
   font-size: 20px;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px), 
-    linear-gradient(90deg, #d8d8c7 28px, transparent 28px); 
-  background-size: 100% 28px, 100% 100%;     
 }
 .about-para p {
   margin: 0 0 20px;
@@ -102,18 +91,6 @@
 .about-para p:last-child {
   margin-bottom: 0;
 }
-
-@keyframes appear {
-    from{
-        opacity: 0;
-        scale: 0.5;  
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-    }
-}
-
 .skills {
   display: flex;
   flex-direction: row;  
@@ -125,7 +102,6 @@
   margin:0;
   font-size:32px;
   font-weight:700;
-  color:#333;
   padding-right:16px;
   border-right:2px solid #cfcfcf;
   white-space:nowrap;

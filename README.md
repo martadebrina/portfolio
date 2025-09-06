@@ -1,13 +1,6 @@
-# Marta Debrina – Portfolio (React + Vite)
+# Marta Debrina – Portfolio
 
-A simple personal website built with React and Vite with CSS.
-
-## What's inside
-
-* Retro heading font + handwritten paragraph style
-* Two‑column **Experience** timeline with scroll animation
-* **Projects** carousel (react‑slick)
-* Floating **Back to Top** button
+A simple personal website built with React with CSS.
 
 ## Requirements
 

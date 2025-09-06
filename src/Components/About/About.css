@@ -110,3 +110,61 @@
   width: 50px;
   height: 50px;
 }
+
+@media (max-width: 900px) {
+  .about-sections {
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+  }
+.about-right h1 {
+  font-size: 36px;         /* was 50px */
+  margin-bottom: 10px;
+  text-align: center;       /* new */
+}
+
+/* konten kanan diratakan ke tengah */
+.about-right {
+  max-width: 700px;
+  text-align: center; 
+  padding-left: 10px;
+
+}
+
+/* paragraf lebih kecil + center + lebar nyaman */
+.about-para {
+  background: rgba(110, 134, 120, 0.28);
+  padding: 10px 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  border-radius: 10px;
+  line-height: 1.6;
+  font-size: 16px;          /* was 20px */
+  text-align: center;       /* new */
+  max-width: 400px;         /* new */
+  margin: 0 auto;           /* new */
+}
+
+/* ikon skill tetap sejajar tapi di tengah */
+.skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;  /* new */
+  gap: 14px;                /* was 16px (sedikit rapat) */
+  margin-top: 16px;
+}
+
+/* judul "Tech Stack" sedikit lebih kecil */
+.skills h3 {
+  margin: 0;
+  font-size: 16px;          /* was 32px */
+  font-weight: 700;
+  padding-right: 12px;      /* was 16px */
+  border-right: 2px solid #cfcfcf;
+  white-space: nowrap;
+}
+.skills img {
+  width: 30px;
+  height: 30px;
+}
+}

@@ -6,6 +6,8 @@
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 16px;
+    width: 100%;
+
 }
 .footer-left{
     display: flex;
@@ -97,4 +99,22 @@
         display: block;
         position: fixed;
     }
+}
+
+@media (max-width: 900px) {
+
+    .footer-left p {
+        font-size: 16px;
+    }
+
+    .footer-mid {
+        grid-column: 2;
+        font-size: 14px;     
+    }
+
+    .footer .sosmed .btn svg {
+    width: 20px;                        
+    height: 20px;
+    }
+
 }

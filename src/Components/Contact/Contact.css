@@ -105,5 +105,12 @@
 
 /* Mobile spacing */
 @media (max-width: 520px) {
-  .btn-glass { justify-self: stretch; text-align: center; }
+  .contact{
+    padding-left:150px;
+  }
+  .btn-glass { 
+    justify-self: stretch; 
+    text-align: center; 
+  }
+
 }

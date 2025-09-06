@@ -1,16 +1,18 @@
 /* Section */
 .portfolio {
   padding-top: 100px;
-  display: block;
+  display: flex;             
+  flex-direction: column;     /* NEW */
   --bg: rgba(110, 134, 120, 0.28);            /* dark canvas */
-  --card: rgba(110, 134, 120, 0.28);          /* base card */
+  --card: rgba(146, 203, 170, 0.28);          /* base card */
   --card2: rgba(110, 134, 120, 0.28);          /* gradient end */
   --border: rgba(255,255,255,.08);
   --text: #e6edf3;
   --muted: #94a3b8;
   --chip: rgba(148,163,184,.16);
-
-  max-width: 1200px;
+  align-items: center;       
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .portfolio-title{
@@ -26,11 +28,14 @@
   gap: 28px;
 }
 
-@media (max-width: 1000px){
-  .cards{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
 @media (max-width: 640px){
   .cards{ grid-template-columns: 1fr; }
+  .portfolio-title{
+    font-size: 30px;
+    text-align: left;
+    margin-left: 0;          /* pastikan gak ada offset */
+    width: 100%; 
+  }
 }
 
 /* Card */

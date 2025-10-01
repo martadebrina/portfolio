@@ -13,9 +13,9 @@ const About = () => {
             <div className="about-right">
                 <h1 className="about-label">About me</h1>
                 <div className="about-para">
-                    <p>Hi! I’m Marta, a student from Indonesia currently studying Computer Science and Physics at UBC Vancouver.</p>
-                    <p>I’m passionate about building tech that’s thoughtful, educational, and grounded in real-world impact.</p>
-                    <p>When I’m not coding or doing physics, I’m probably cooking, reading, fishing, or hunting for durian desserts.</p>
+                    <p>Hello! I’m Marta! I'm a fourth-year student at UBC Vancouver majoring in Computer Science & Physics, and I’m from Indonesia.</p>
+                    <p>I’m interested in software development and enjoy exploring UI/UX, computer graphics, artificial intelligence, and robotics. In physics, I’m especially into mechanics, dynamics, and computational physics, and I’m currently interested in quantum physics. I enjoy teaching too!</p>
+                    <p>Also, I’m obsessed with dogs and I love cooking, fishing, and (of course) durian.</p>
                 </div>
                 <div className="skills">
                 <h3>Tech Stack</h3>

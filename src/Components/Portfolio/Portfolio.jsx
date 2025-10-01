@@ -4,9 +4,20 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 const projects = [
   {
+    title: "Peerfect",
+    img: "/peerfect.jpeg",
+    demo: "https://hackrice-demo.vercel.app/",
+    link: "https://devpost.com/software/peerfect-2s4hkw",
+    repo: null,
+    description:
+      "A peer-to-peer tutoring platform where students can post quick help requests, get matched instantly, and reward each other with points instead of money.",
+    tags: ["React", "FastAPI", "MongoDB"]
+  },
+  {
     title: "TasteVan",
     img: "/tastevan.png",
     demo: "https://taste-van.com",
+    link: null,
     repo: null,
     description:
       "FlutterFlow + Firebase web app for discovering Vancouver restaurants.",
@@ -16,6 +27,7 @@ const projects = [
     title: "PuppyPal",
     img: "/puppypal.jpeg",
     demo: null,
+    link: null,
     repo: "https://github.com/martadebrina/DogManagementApp",
     description:
       "Java-based app to track your dog's health, routines, and vet records.",
@@ -25,6 +37,7 @@ const projects = [
     title: "InsightUBC",
     img: "/insightUBC.jpeg",
     demo: null,
+    link: null, 
     repo: "https://github.com/martadebrina/insightUBCteam",
     description:
       "TypeScript-based UBC course query engine with custom filtering, transformation, and visualization.",
@@ -34,6 +47,7 @@ const projects = [
     title: "Salt Marsh Study",
     img: "/seasalt.jpeg",
     demo: "https://drive.google.com/drive/folders/14Pw-W2l-S8T2niB_Uikm6TlUV84a7gqy?usp=sharing",
+    link: null,
     repo: null,
     description:
       "Group research on sedimentation–vegetation relation in salt marshes at Wreck Beach.",
@@ -58,6 +72,11 @@ export default function Portfolio() {
                 <div className="card-links">
                   {p.demo && (
                     <a href={p.demo} target="_blank" rel="noreferrer" title="Live demo">
+                      <FiExternalLink />
+                    </a>
+                  )}
+                  {p.link && (
+                    <a href={p.link} target="_blank" rel="noreferrer" title="Link">
                       <FiExternalLink />
                     </a>
                   )}
